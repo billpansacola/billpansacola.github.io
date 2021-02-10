@@ -9,157 +9,116 @@ html {
 }
 
 body {
-    font-family: 'Press Start 2P','Montserrat', sans-serif;
     background: #e7e6e3;
+    width: 100vw;
 }
 
-#start {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: #2b2a29;
-    z-index: 100;
-    color: #f9f9f9;
-}
-
-#start-text {
-    width: 50%;
-    height: 60%;
-    display: absolute;
-    top: 50%;
-    left: 50%;
-    margin: 20% 25%;
-    text-align: center;
-}
-
-#start h1 {
-    font-family: 'Press Start 2P', sans-serif;
-}
-
-.blink {
-    animation: blinker 2s linear infinite;
-  }
-  
-  @keyframes blinker {
-    50% {
-      opacity: 0;
-    }
-  }
-
-main {
+nav {
     display: flex;
     flex-direction: row;
-    width: 100%;
-}
+    background: #1b1b1a;
+    color: #fff;
+    font-family: 'Press Start 2P','Jost', sans-serif;
 
-#sidebar {
-    width: 15%;
-    background: #2b2a29;
-    color: #f9f9f9;
+    overflow: hidden;
     position: fixed;
-    overflow-x: hidden;
-
-    justify-content: center;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 
-#sidebar div {
-    margin: 10px;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-#bill {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Press Start 2P', sans-serif;
-    text-align: center;
-}
-
-#bill img {
-    border-style: none;
-    margin: auto;
-    width: 70%;
-    border-radius: 50%;
-    height: auto;
-}
-
-#links {
-    text-align: center;
-}
-
-.fa {
-    padding: 7px;
-    font-size: 20px;
-    width: 20px;
-    text-decoration: none;
-    border-radius: 50%;
-}
-
-.fa:hover {
+nav .logo span {
+    border-left: 2px solid #7E7E7E;
+    font-size: 16px;
+    height: 30px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 24px;
+    vertical-align: top;
     opacity: 0.7;
 }
 
-.fa-github {
-    background: white;
-    color: #333;
-}
-  
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
+nav div {
+    margin: 0 25px;
+    padding: 30px 0;
 }
 
-.fa-google {
-    background: #DB4437;
-    color: white;
+nav a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
-.fa-linkedin {
-    background: #0077b5;
-    color: white;
+#menu .icon {
+    display: none;
 }
-#nav {
+
+#jumbotron {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    padding-top: 50px;
+    width: 100%;
+    background: #2b2a29;
+    font-family: 'Press Start 2P','Montserrat', sans-serif;
+    transform: skewY(-3deg);
+}
+
+#jumbotron img {
+    max-height: 100%;
+    width: auto;
+    margin: 0;
+    transform: skewY(3deg);
+}
+
+#jumbotron div {
+    color: #fff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transform: skewY(3deg);
 }
 
-#nav span {
-    text-align: center;
-    margin: 5px;
+#jumbotron div h1,h3 {
+    font-size: 48px;
 }
 
-#nav span a {
-    text-decoration: none;
-    color: #f9f9f9;
+main {
+    padding-top: 5%;
 }
 
+/* about */
 #content {
-    width: 85%;
-    margin-left: 15%;
+    width: 100%;
     background: #e7e6e3;
     color: #2b2a29;
 }
 
-#about {
-    padding-top: 2.5%;
-    margin-bottom: 2.5%;
+#about, #experience, #skills {
+    font-family: 'Press Start 2P','Montserrat', sans-serif;
+    padding: 2.5% 0;
+    width: 80%;
+    margin: 0 10% 5% 10%;
+    background: white;
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 22px 0 rgba(0, 0, 0, 0.19);
 }
 
-#about h1,p {
-    width: 90%;
-    margin: 0 5%;
+#about h1, #experience h1, #skills h1 {
+    text-align: center;
+    background: #2b2a29;
+    color: white;
+    width: 35%;
+    margin: 0 32.5% 4% 32.5%;
     line-height: 2;
 }
 
-#about div {
-    width: 90%;
+#about p, #experience p {
+    font-family:'Press Start 2P', 'Jost', sans-serif;
+    line-height: 2;
     margin: 0 5%;
+}
+
+#about div {
     text-align: center;
 }
 
@@ -204,7 +163,7 @@ main {
     margin: 0;
 }
 
-.playerID, .pop-up {
+.playerID, .pop-up, .projects {
     position: absolute;
     display: none;
     top: 50%;
@@ -217,12 +176,6 @@ main {
     text-align:center;
 }
 
-#education, #experience, #projects, #skills {
-    width: 90%;
-    margin: 0 5%;
-    line-height: 2;
-}
-
 .row {
     display: flex;
     flex-direction: row;
@@ -233,20 +186,13 @@ main {
     flex-direction: column;
 }
 
-#education .row {
-    width: 90%;
-}
-
-#education .col {
-    width: 50%;
+#education {
+    margin: 2.5% 2.5%;
 }
 
 #education p {
-    width: 100%;
-    margin: 2.5% 0;
-
-    line-height: 2;
-    font-size: 20px;
+    margin: 0 2.5%;
+    text-align: left;
 }
 
 #education img {
@@ -255,50 +201,218 @@ main {
     height: 500px;
 }
 
-#experience, #projects, #skills {
-    padding-top: 2.5%;
-    font-family: 'Open Sans', sans-serif;
+.content-container {
+    width: 90%;
+    padding: 0 5%;
+    padding-bottom: 5%;
 }
 
-#experience h1, #projects h1, #skills h1 {
-    font-family: 'Press Start 2P', sans-serif;
+.work-block {
+    width: 45%;
+    margin: 0 27.5%;
+    background-color: #a7a5a5;
+    padding: 10px;
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 22px 0 rgba(0, 0, 0, 0.19);
 }
 
-#experience .col, #projects .col {
-    width: 100%;
-    margin-bottom: 2.5%;
+.project-block {
+    width: 40%;
+    margin: 0 5%;
+    background-color: #a7a5a5;
+    padding: 15px;
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 22px 0 rgba(0, 0, 0, 0.19);
 }
 
-#experience .row, #projects .row {
-    width: 100%;
+.info {
+    color: black;
+    padding: 15px;
+    align-items: center;
 }
 
-#experience .row p, #projects .row p {
-    width: 50%;
-}
-
-#experience p, #projects p {
-    margin: 0;
-
+.work-block .info p:nth-child(2) {
+    font-weight:bold;
     font-size: 24px;
 }
 
-.date {
-    text-align: right;
+.work-block .info p:nth-child(n+3) {
+    font-size: 20px;
+    font-style: italic;
 }
 
-#experience ul, #projects ul {
-    list-style-type: circle;
-    width: 90%;
-    margin: 0 5%;
+.project-block .info p:nth-child(1) {
+    font-weight:bold;
+    font-size: 28px;
+}
+
+.project-block .info p:nth-child(n+2) {
     font-size: 20px;
+    font-style: italic;
+}
+
+#experience .info p {
+    font-family: 'Jost', sans-serif;
+}
+
+.buttons {
+    align-items: center;
+    width: 100%;
+}
+
+.buttons a {
+    width: 40%;
+    margin: 0 5%;
+    padding: 5px;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    text-decoration: none;
+    text-align: center;
+    border: 3px solid black;
+    color: black;
+}
+
+.buttons p {
+    width: 100%;
+    padding: 5px;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    text-decoration: none;
+    text-align: center;
+    border: 3px solid black;
+    color: black;
+}
+
+.buttons a:hover, .buttons p:hover {
+    background-color: black;
+    color: white;
+}
+
+.projects {
+    font-family: 'Jost', sans-serif;
+    text-align: left;
+    font-size: 24px;
 }
 
 #skills p {
-    margin: 0;
-    font-size: 20px;
+    font-family: 'Jost', sans-serif;
 }
 
-#skills {
-    margin-bottom: 5%;
+#skills .content-container {
+    padding-bottom: 0;
+}
+
+.headers {
+    padding-bottom: 30px;
+}
+
+.headers h4 {
+    padding-bottom: 10px;
+}
+
+.headers p {
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+footer {
+    padding: 1rem;
+    background:#303030;
+    width: 100%;
+    color:white;
+    margin: auto;
+}
+
+footer .row {
+    justify-content: center;
+}
+
+footer h4 {
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    padding-bottom: 10px;
+}
+
+footer a {
+    margin: 0 1%;
+}
+
+.fa {
+    padding: 7px;
+    font-size: 30px;
+    width: 20px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+    color: white;
+}
+  
+.fa-twitter {
+    color: white;
+}
+
+.fa-google {
+    color: white;
+}
+
+.fa-linkedin {
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    body {
+        position: absolute;
+        width: unset;
+    }
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        justify-content: center;
+    }
+
+    nav div {
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .logo span {
+        display:none;
+    }
+    
+    #menu a {
+        font-size: 12px;
+        display: none;
+    }
+
+    #jumbotron {
+        flex-direction: column;
+        height: 50%;
+    }
+
+    #jumbotron img {
+        max-height: 100%;
+        width: 100%;
+    }
+
+    #jumbotron div {
+        align-items: center;
+        padding: 10px;
+    }
+    
+    #jumbotron div h1,h3 {
+        font-size: 15px;
+        color: #fff;
+    }
+
+    #education .row {
+        flex-direction: column;
+    }
 }

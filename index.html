@@ -4,55 +4,42 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Press Start to Enter</title>
+        <title>Bill Pansacola</title>
 
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="main-style.css">
     </head>
 
     <body>
-        <div id="start">
-            <div id="start-text">
-                <h1>WELCOME P1</h1>
-                <br>
-                <h1 class="blink">CLICK ANYWHERE TO ENTER</h1>
+        <nav>
+            <div class="logo">
+                <a href="#jumbotron">BMP</a>
+                <span></span>
+            </div>
+
+            <div id="menu">
+                <a href="#main">ABOUT</a>
+                <a href="#experience">EXPERIENCE</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#skills">SKILLS</a>
+            </div>
+        </nav>
+
+        <div id="jumbotron">
+            <img src="assets/billtransparent.png">
+            <div>
+                <h1>Bill Matthew Pansacola,</h1>
+                <h3>a gamer and a coder.</h3>
             </div>
         </div>
 
-        <main>
-            <div id="sidebar" class="container">
-                <div id="bill">
-                    <img src="assets/bill.jpg">
-                    <br>
-                    <h3>bill matthew</h3>
-                    <h3>pansacola</h3>
-                </div>
-                <div id="links">
-                    <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/bignerd_bp" class="fa fa-twitter"></a>
-                    <a id="gmail" href="#" class="fa fa-google"></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/billpansacola/" class="fa fa-github"></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/bill-matthew-pansacola/" class="fa fa-linkedin"></a>
-                    <div class="overlay">
-                        <div class="pop-up">
-                            <div class="col">
-                                <p><b>Send me an email!</b></p>
-                                <p>billmatthew.pansacola@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="nav">
-                    <span><a href="#about">ABOUT</a></span>
-                    <span><a href="#experience">EXPERIENCE</a></span>
-                    <span><a href="#projects">PROJECTS</a></span>
-                    <span><a href="#skills">SKILLS</a></span>
-                </div>
-            </div>
-
+        <main id="main">
             <div id="content" class="container">
                 <div id="about">
                     <h1>ABOUT ME</h1>
@@ -69,123 +56,172 @@
                     <br>
                     <p>My go-to genre of games are Massively Multiplayer Online Role-Playing Games (MMORPGs) and Tactical Turn-based Games (TTG). A few of my favorite games consist of the Fire Emblem franchise, the Final Fantasy franchise, and The World Ends with You.</p>
                     <p>I grew up stuck in front of my computer and playing video games, so I would like to eventually achieve my dream of working in Game Development/Game Design.</p>
+
+                    <div id="education">
+                        <h1>EDUCATION</h1>
+                        <div class="row">
+                            <img src="assets/billgrad.jpeg">
+                            <div class="col">
+                                <p style="font-size: 24px;">In June 2020, I graduated from the University of California,Davis with a Bachelor's Degree of Science in Computer Science.</p>
+                                <p style="font-size: 14px;"><b><u>RELATED COURSEWORK</u>:</b> Software Engineering and Software Development Methodologies (Agile), Computer Security, Web Design, Operating Systems and System Programming, and Artificial Intelligence.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
+                <div id="experience">
+                    <h1>WORK EXPERIENCE</h1>
+                    <div class="content-container row">
+                        <div class="work-block">
+                            <div class="info col">
+                                <img style="height: 150px;" src="assets/wecare.png">
+                                <p>SWE Intern, Backend Developer</p>
+                                <p>Sept. 2020 - Dec. 2020</p>
+                                <p><b>STACK: Java, Selenium WebDriver, MySql, Apache</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 id="projects">PROJECTS</h1>
+                    <div class="content-container row">
+                        <div class="project-block">
+                            <div class="info col">
+                                <p>Collaborative Spotify Playlist</p>
+                                <div class="buttons row">
+                                    <a class="getProject">View Details</a>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/billpansacola/Projects/tree/master/Web%20Design">View on Github</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-block">
+                            <div class="info col">
+                                <p>BlockChain</p>
+                                <div class="buttons row">
+                                    <a class="getProject">View Details</a>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/billpansacola/Projects/tree/master/Computer%20Security">View on Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-container row">
+                        <div class="project-block">
+                            <div class="info col">
+                                <p>Super Breakout</p>
+                                <div class="buttons row">
+                                    <a class="getProject">View Details</a>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/billpansacola/Projects/tree/master/Software%20Engineering">View on Github</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-block">
+                            <div class="info col">
+                                <p>Artificial Intelligence</p>
+                                <div class="buttons row">
+                                    <a class="getProject">View Details</a>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/billpansacola/Projects/tree/master/Artificial%20Intelligence">View on Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1>Leadership Experience</h1>
+                    <div class="content-container row">
+                        <div class="work-block">
+                            <div class="info col">
+                                <img style="height: 150px;" src="assets/Black.png">
+                                <p>Mga Kapatid Community Leader</p>
+                                <p>MK is a Filipinx American collegiate organization at the University of California, Davis</p>
+                                <div class="buttons row">
+                                    <p class="getProject">View Details</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
                 <div class="overlay">
                     <div class="playerID"><img src="assets/genshinplayer.png"></div>
                     <div class="playerID"><img style="height: 150px;" src="assets/ffxivplayer.png"></div>
                     <div class="playerID"><img src="assets/gbfplayer.png"></div>
                     <div class="playerID"><img style="height: 120px;" src="assets/valplayer.png"></div>
-                </div>
-
-                <div id="education">
-                    <h1>EDUCATION</h1>
-                    <div class="row">
-                        <div class="col">
-                            <p>In June 2020, I graduated from the University of California,Davis with a Bachelor's Degree of Science in Computer Science.</p>
-                            <p><b><u>RELATED COURSEWORK</u>:</b> Software Engineering and Software Development Methodologies (Agile), Computer Security, Web Design, Operating Systems and System Programming, and Artificial Intelligence.</p>
-                        </div>
-                        <img src="assets/billgrad.jpeg">
-                    </div>
-                </div>
-
-                <div id="experience">
-                    <h1>WORK EXPERIENCE</h1>
-                    <div class="col">
-                        <div class="row">
-                            <p><b>WeCare Insurance</b>, Omaha, NE</p>
-                            <p class="date"><i>SEPT. 2020 - DEC. 2020</i></p>
-                        </div>
-                        <p><b><i>Software Engineer Intern, Backend Developer</i></b></p>
+                    <div class="projects">
                         <ul>
-                            <li>Developed Web Scraping software in Java using Selenium WebDriver to retrieve auto insurance information from multiple insurance carriers for the client</li>
-                            <li>Managed and navigated through MySQL databases and tables using Java to utilize in Web Automation software</li>
-                            <li>Lead a collaborative team of 4 in testing and optimization of code, and handled weekly update meetings with the project manager</li>
-                            <li><b>Stack: SQL, Java, Selenium</b></li>
+                            <li>Programmed web application using Spotify Web API and OAuth that connects to the user's Spotify playback device to play songs, allows the use to selct songs and form a playlist, and a chatroom.</li>
+                            <li><b>STACK: OAuth, JavaScript, HTML/CSS, Socket.IO, Node.js, Express</b></li>
                         </ul>
                     </div>
-
-                    <h1>LEADERSHIP EXPERIENCE</h1>
-                    <div class="col">
-                        <div class="row">
-                            <p style="font-size: 18px;"><b>Mga Kapatid, Filipinx American University Organization</b>, Davis, CA</p>
-                            <p style="font-size: 18px;" class="date"><i>MAY 2017 - MAY 2020</i></p>
-                        </div>
-                        <p><b><i>President</i></b></p>
+                    <div class="projects">
                         <ul>
-                            <li>Oversaw a board of 21 individuals, conduct weekly board meetings, and create weekly agendas.</li>
-                            <li>Faciliated events for over 100+ general members through the school year, aimed for exploring cultural identity, issues in the Filipinx community, and networking with other members.</li>
-                        </ul>
-                        <p><b><i>Secretary</i></b></p>
-                        <ul>
-                            <li>Overesaw weekly newsletter, organized organizations's archives, maintained a relationship with other Filipinx American student organizations, and faciliated a team of 22 individuals.</li>
-                        </ul>
-                        <p><b><i>Mentorship Coordinator</i></b></p>
-                        <ul>
-                            <li>Managed a network of over 100+ pairings of mentors and mentees with quarterly events and workshops.</li>
+                            <li>Implemented a basic Blockchain from scratch in Python using a Proof of Work mining algorithm,
+                                validation between all components in the Blockchain, a database serving the blockchain and
+                                pending transactions, and utility to publish RSA-signed transactions.
+                                </li>
+                            <li><b>STACK: Python</b></li>
                         </ul>
                     </div>
-                </div>
-
-                <!-- add github links to source code -->
-                <div id="projects">
-                    <h1>PROJECTS</h1>
-                    <div class="col">
-                        <div class="row">
-                            <p><b>Collaborative Spotify Playlist and Chatroom</b></p>
-                            <p class="date">2020<i></i></p>
-                        </div>
+                    <div class="projects">
                         <ul>
-                            <li>Programmed application in Javascript and HTML/CSS using Spotify Web API and OAuth that connects to a user's Spotify playback device to play songs, allows to search and select songs, and form a playlist, and a chatroom.</li>
-                            <li>Implemented AJAX requests to handle searching and selection of songs, and invitations to the playlist for the user.</li>
-                            <li><b>Stack: OAuth, JavaScript, HTML/CSS, Socket.IO, Express</b></li>
+                            <li>Programmed iconic game in Java and Android Studio using OOP design concepts and agile software development practices.</li>
+                            <li>Incorporated additional features to increase interactions between the player and the game.</li>
+                            <li>Utilized Git for collaboration and for decentralized workflow in a team of 4 people.</li>
+                            <li><b>STACK: Java, JUnit, Git</b></li>
                         </ul>
                     </div>
-                    
-                    <div class="col">
-                        <div class="row">
-                            <p><b>Blockchain</b></p>
-                            <p class="date"><i>2020</i></p>
-                        </div>
-                        <ul>
-                            <li>Implemented a basic Blockchain in Python using a Proof of Working mining algorithm, hashing functions, validation between all components, a database serving the blockchain and pending transactions, and utility to publish RSA-signed transactions.</li>
-                            <li><b>Stack: Python</b></li>
-                        </ul>
-                    </div>
-
-                    <div class="col">
-                        <div class="row">
-                            <p><b>Super Breakout</b></p>
-                            <p class="date"><i>2019</i></p>
-                        </div>
-                        <ul>
-                            <li>Programmed iconic game in Java and Android Studio utilizing OOP design concepts and agile software development practices in a team of 4.</li>
-                            <li>Incorporated additional game features to increase interactions between the player and the game.</li>
-                            <li>Utilized Git for collaboration and for decentralized workflow.</li>
-                            <li><b>Stack: Java, JUnit, Git</b></li>
-                        </ul>
-                    </div>
-
-                    <div class="col">
-                        <div class="row">
-                            <p><b>Artificial Intelligence coursework</b></p>
-                            <p class="date"><i>2019</i></p>
-                        </div>
+                    <div class="projects">
                         <ul>
                             <li>Programmed a Connect 4 AI using the mini-max algorithm and alpha-beta pruning.</li>
-                            <li>Programmed a Pong Ai using deep Q-learning and Google Cloud VM.</li>
-                            <li><b>Stack: Java</b></li>
+                            <li>Programmed a Pong AI using deep Q-learning and Google Cloud VM.</li>
+                            <li><b>STACK: Java, Google Cloud VM</b></li>
+                        </ul>
+                    </div>
+
+                    <div class="projects">
+                        <h4>President</h4>
+                        <ul>
+                            <li>Oversaw a board of 21 individuals, conduct weekly board meetings, and create weekly agendas, using Microsoft/Google suite</li>
+                            <li>Facilitated events for over 100+ general members throughout the school year, aimed for exploring cultural identity, issues in the Filipinx community, and networking with other members</li>
+                        </ul>
+                        <br>
+                        <h4>Secretary</h4>
+                        <ul>
+                            <li>Oversaw weekly newsletter, organized organization’s archives, maintained a relationship with other Filipinx American student organizations, and facilitated a team of 22 people</li>
+                        </ul>
+                        <br>
+                        <h4>Mentorship Coordinator</h4>
+                        <ul>
+                            <li>Managed a network of over 100+ pairings between mentors and mentees with quarterly events and workshops</li>
                         </ul>
                     </div>
                 </div>
 
                 <div id="skills">
-                    <h1>SKILLS</h1>
-                    <div class="col">
-                        <p><b>PROGRAMMING LANGUAGES:</b> <b>5 years:</b> C++, Java <b>2 years:</b> JavaScript, HTML, CSS, Python</p>
-                        <p><b>DATABASES:</b> MySQL</p>
-                        <p><b>TOOLS:</b> Git, Visual Studio Code, Android Studio</p>
-                        <p><b>SOFT SKILLS:</b> Leadership, Teamwork, Time Management, Written and Verbal Communication, Conflict-Resolution</p>
+                    <h1>Skills</h1>
+                    <div class="content-container">
+                        <div class="headers">
+                            <h4>Programming Languages:</h4>
+                            <p><b>Fluent</b> in Java, C++ (5 years)</p>
+                            <p><b>Proficient</b> in Python, JavaScript, HTML, CSS (2 years)</p>
+                            <p><b>Familiar</b> with Golang, Rust (1 year)</p>
+                        </div>
+
+                        <div class="headers">
+                            <h4>Frameworks:</h4>
+                            <p><b>Familiar</b> with OAuth, Express, JUnit, Selenium</p>
+                        </div>
+
+                        <div class="headers">
+                            <h4>Databases:</h4>
+                            <p><b>Familiar</b> with MySQL</p>
+                        </div>
+
+                        <div class="headers">
+                            <h4>Soft Skills:</h4>
+                            <p>Leadership, Time Management, Written and Verbal Communication, Conflict-Resolution</p>
+                        </div>
                     </div>
                 </div>
 
@@ -193,7 +229,14 @@
         </main>
 
         <footer>
-            <script src="script.js"></script>
+            <h4>Connect with me on any of my socials!</h4>
+            <div class="row">
+                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/bignerd_bp" class="fa fa-twitter"></a>
+                <a id="gmail" href="#" class="fa fa-google"></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/billpansacola/" class="fa fa-github"></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/bill-matthew-pansacola/" class="fa fa-linkedin"></a>
+            </div>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
