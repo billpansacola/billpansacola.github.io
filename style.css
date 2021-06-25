@@ -208,8 +208,8 @@ main {
 }
 
 .work-block {
-    width: 45%;
-    margin: 0 27.5%;
+    width: 70%;
+    margin: 0 15%;
     background-color: #a7a5a5;
     padding: 10px;
     box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 22px 0 rgba(0, 0, 0, 0.19);
@@ -231,11 +231,11 @@ main {
 
 .work-block .info p:nth-child(2) {
     font-weight:bold;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .work-block .info p:nth-child(n+3) {
-    font-size: 20px;
+    font-size: 18px;
     font-style: italic;
 }
 
